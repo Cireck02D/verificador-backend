@@ -16,7 +16,7 @@ app.post('/verificar', async (req, res) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: "new",
       args: ['--no-sandbox', '--disable-setuid-sandbox']
     });
     const page = await browser.newPage();
